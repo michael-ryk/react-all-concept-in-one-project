@@ -1,11 +1,10 @@
 import './App.css';
+import UserModule from './components/UI/UserModule'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Start</h1>
-      </header>
+      <UserModule />
     </div>
   );
 }
