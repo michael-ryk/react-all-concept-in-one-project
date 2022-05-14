@@ -4,12 +4,13 @@ import Error from '../UI/Error';
 function AddUser(props){
 
   const [user, setUser] = useState({name: '', age: ''})
-  const [errorRaised, setErrorRaised] = useState(false);
-  const [errorMessage, setErrorMessage] = useState({title: 'Error 1', message:'Fix it'});
+  const [error, setError] = useState();
+
+  console.log(error)
 
   function handleChange(e){
     const {name, value} = e.target;
-    setErrorRaised(false);
+    setError(null);
     setUser((prev) => {
       return {...prev, [name]:value}
     })
@@ -20,13 +21,11 @@ function AddUser(props){
     
     // Validate incorrect values
     if (user.name.trim().length === 0 || user.age.trim().length === 0) {
-      setErrorMessage({title: 'No input detected', message: 'Dont leave inputs empty'})
-      setErrorRaised(true)
+      setError({title: 'No input detected', message: 'Dont leave inputs empty'})
       return;
     };
     if (user.age < 1) {
-      setErrorMessage({title: 'Age is too low', message: 'Enter Valid Age!!'})
-      setErrorRaised(true)
+      setError({title: 'Age is too low', message: 'Enter Valid Age!!'})
       return;
     };
 
@@ -36,7 +35,7 @@ function AddUser(props){
 
   return (
     <>
-    {errorRaised ? <Error object={errorMessage}/> : <></> }
+    {error && <Error object={error}/>}
       <form onSubmit={submitNewUser}>
         <label>User Name: </label>
         <input name='name' onChange={handleChange} value={user.name}></input>
