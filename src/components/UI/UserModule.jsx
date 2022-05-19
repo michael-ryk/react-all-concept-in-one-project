@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import AddUser from '../Modules/AddUser';
+import ShowDummyUsers from '../Modules/ShowDummyUsers';
 import ShowUsers from '../Modules/ShowUsers';
 
 function UserModule() {
@@ -19,6 +20,7 @@ function UserModule() {
       <h1>User record system</h1>
       <AddUser addUser={addToList} />
       <ShowUsers usersList={usersList} />
+      <ShowDummyUsers />
     </>
   );
 }
