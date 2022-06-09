@@ -6,10 +6,12 @@ import MovieList from '../FetchApi/MoviesList';
 const FetchApi = () => {
 
   //State to save fetched data
-  const [movies, setMovies] = useState();
+  const [movies, setMovies] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   //function to fetch data from backend using Async Wait
   async function fetchMoviesHandler() {
+    setIsLoading(true);
     const response = await fetch('https://swapi.dev/api/films/');
     const data = await response.json();
         
@@ -25,6 +27,7 @@ const FetchApi = () => {
 
     //Put transformed array to state
     setMovies(transformedArray);
+    setIsLoading(false);
 
   }
 
@@ -55,7 +58,9 @@ const FetchApi = () => {
     <>
       <h1>Fetch API</h1>
       <button onClick={fetchMoviesHandler}>Fetch data from Server</button>
-      {movies && <MovieList movies={movies} />}
+      {isLoading && <p>Loading...</p>}
+      {!isLoading && movies.length>0 && <MovieList movies={movies} />}
+      {!isLoading && movies.length===0 && <p>Movies not found.</p>}
     </>
   );
 };
