@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import dummyMovies from '../FetchApi/dummyMovies';
 import MovieList from '../FetchApi/MoviesList';
@@ -9,6 +9,11 @@ const FetchApi = () => {
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+
+  //Call only when dependency changes or component loaded
+  useEffect(() => {
+    fetchMoviesHandler();
+  }, []);
 
   //function to fetch data from backend using Async Wait
   async function fetchMoviesHandler() {
