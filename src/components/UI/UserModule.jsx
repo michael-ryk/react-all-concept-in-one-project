@@ -21,8 +21,18 @@ function UserModule() {
       <AddUser addUser={addToList} />
       <ShowUsers usersList={usersList} />
       <ShowDummyUsers />
+      <ShowDummyUsers />
+      <ShowDummyUsers />
+      <ShowDummyUsers />
+      <ShowDummyUsers />
+      <ShowDummyUsers />
+      <ShowDummyUsers />
+      <ShowDummyUsers />
+      <ShowDummyUsers />
+      <ShowDummyUsers />
     </>
   );
 }
 
 export default UserModule;
+

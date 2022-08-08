@@ -1,6 +1,6 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
 
-import './App.css';
+import classes from './App.module.css'
 import UserModule from './components/UI/UserModule';
 import FetchApi from './components/UI/FetchApi';
 import Layout from './layout/Layout';
@@ -8,7 +8,7 @@ import MainNavigation from './layout/MainNavigation';
 
 function App() {
   return (
-    <div>
+    <div className={classes.main}>
       <MainNavigation />
       <Layout>
         <Routes>
