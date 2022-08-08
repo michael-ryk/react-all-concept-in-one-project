@@ -1,0 +1,27 @@
+.main-footer { 
+  background: rgb(217, 217, 217);
+  height: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-footer ul{
+  list-style: none;
+  display: flex;
+  margin:0;
+  padding: 0;
+}
+
+.main-footer li {
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+.main-footer li:hover {
+  color:rgb(0, 13, 114);
+  background: rgb(181, 181, 255);
+  cursor: context-menu;
+  font-weight: bold;
+}

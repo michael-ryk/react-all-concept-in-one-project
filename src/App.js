@@ -5,6 +5,7 @@ import UserModule from './components/UI/UserModule';
 import FetchApi from './components/UI/FetchApi';
 import Layout from './layout/Layout';
 import MainNavigation from './layout/MainNavigation';
+import Footer from './layout/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='fetchapi' element={<FetchApi />} />
         </Routes>
       </Layout>
+      <Footer />
     </div>
   );
 }
