@@ -6,6 +6,7 @@ import FetchApi from './components/UI/FetchApi';
 import Layout from './layout/Layout';
 import MainNavigation from './layout/MainNavigation';
 import Footer from './layout/Footer';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <MainNavigation />
       <Layout>
         <Routes>
-          <Route path='/' element={<Navigate replace to='/mainpage' />} />
-          <Route path='mainpage' element={<UserModule />} />
+          <Route path='/' element={<Navigate replace to='/homepage' />} />
+          <Route path='homepage' element={<HomePage />} />
+          <Route path='usermodule' element={<UserModule />} />
           <Route path='fetchapi' element={<FetchApi />} />
         </Routes>
       </Layout>
