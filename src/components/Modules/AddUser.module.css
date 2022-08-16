@@ -1,0 +1,56 @@
+.container {
+  box-sizing: border-box;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 20%);
+  border-radius: 10px;
+}
+
+.control {
+  margin-bottom: 5px;
+}
+
+.control label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.control input,
+.control textarea {
+  font: inherit;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #c1d1d1;
+  display: block;
+  width: 98%;
+}
+
+.control input:focus,
+.control textarea:focus {
+  background-color: #e8f6e3;
+  outline-color: #4e6b45;
+}
+
+.error{
+  background-color: rgb(255, 200, 200);
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: #c1d1d1;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.button:hover {
+  background-color: #7290a3;
+  color: #004ddd;
+}

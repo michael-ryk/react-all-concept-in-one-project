@@ -1,6 +1,8 @@
 import { useState, useRef } from 'react';
 import Error from '../UI/Error';
 
+import classes from './AddUser.module.css';
+
 function AddUser(props) {
   const nameRef = useRef();
   const ageRef = useRef();
@@ -37,24 +39,34 @@ function AddUser(props) {
 
   return (
     <>
-      {error && <Error object={error} />}
-      <form onSubmit={submitNewUser}>
-        <label>User Name: </label>
-        <input
-          name='name'
-          onChange={handleChange}
-          value={user.name}
-          ref={nameRef}
-        ></input>
-        <label>Age: </label>
-        <input
-          name='age'
-          onChange={handleChange}
-          value={user.age}
-          ref={ageRef}
-        ></input>
-        <button type='submit'>Add User</button>
-      </form>
+      
+      <div className={classes.container}>
+        <form onSubmit={submitNewUser}>
+
+          <div className={classes.control}>
+            <label>User Name: </label>
+            <input
+              name='name'
+              onChange={handleChange}
+              value={user.name}
+              ref={nameRef}
+            ></input>
+          </div>
+
+          <div className={classes.control}>
+            <label>Age: </label>
+            <input
+              name='age'
+              onChange={handleChange}
+              value={user.age}
+              ref={ageRef}
+            ></input>
+          </div>
+
+          <button type='submit' className={classes.button}>Add User</button>
+          {error && <Error object={error} />}
+        </form>
+      </div>
     </>
   );
 }
