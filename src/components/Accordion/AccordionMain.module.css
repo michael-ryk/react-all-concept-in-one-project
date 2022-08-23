@@ -1,0 +1,25 @@
+/* Collor pallete: 
+#6E85B7
+#B2C8DF
+#C4D7E0
+#F8F9D7
+*/
+
+.accflex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F9D7;
+}
+
+.acccontainer {
+  margin: 1rem auto;
+  width: 100%;
+}
+
+.acccontainer h3 {
+  margin: 1rem auto;
+  color: #6E85B7;
+  font-size: 1.5rem;
+  font-weight: bold;
+}

@@ -22,6 +22,11 @@ const MainNavigation = () => {
               Fetch
             </NavLink>
           </li>
+          <li>
+            <NavLink to='accordion' className={({isActive}) => isActive ? activeClassName : undefined}>
+              Accordion
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>

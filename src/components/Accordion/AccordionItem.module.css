@@ -1,0 +1,35 @@
+.acccontainer {
+  margin: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  border: solid 1px #9fa4a8;
+  border-radius: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.accheader {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.accheader h4 {
+  color: #6E85B7
+}
+
+.accheader button {
+  border: none;
+  border-radius: 10px;
+  background-color: #C4D7E0;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.accheader button:hover {
+  background-color: #6E85B7;
+  color: white
+}
+
+.acccontainer p {
+  display: none;
+}

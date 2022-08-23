@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import dummyMovies from '../FetchApi/dummyMovies';
-import MovieList from '../FetchApi/MoviesList';
+import dummyMovies from './dummyMovies';
+import MovieList from './MoviesList';
 
 const FetchApi = () => {
 
