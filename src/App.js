@@ -1,13 +1,16 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
 
-import classes from './App.module.css'
 import UserModule from './components/UI/UserModule';
 import FetchApi from './components/FetchApi/FetchApi';
 import Layout from './layout/Layout';
 import MainNavigation from './layout/MainNavigation';
 import Footer from './layout/Footer';
+
 import HomePage from './pages/HomePage';
 import Accordion from './pages/Accordion';
+import ProductsFilter from './pages/ProductsFilter';
+
+import classes from './App.module.css'
 
 function App() {
   return (
@@ -20,6 +23,7 @@ function App() {
           <Route path='usermodule' element={<UserModule />} />
           <Route path='fetchapi' element={<FetchApi />} />
           <Route path='accordion' element={<Accordion />} />
+          <Route path='products-filter' element={<ProductsFilter />} />
         </Routes>
       </Layout>
       <Footer />

@@ -27,6 +27,11 @@ const MainNavigation = () => {
               Accordion
             </NavLink>
           </li>
+          <li>
+            <NavLink to='products-filter' className={({isActive}) => isActive ? activeClassName : undefined}>
+              Products Filter
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>
