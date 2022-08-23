@@ -13,7 +13,7 @@ const MainNavigation = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to='usermodule' className={({isActive}) => isActive ? activeClassName : undefined}>
+            <NavLink to='add-user' className={({isActive}) => isActive ? activeClassName : undefined}>
               Users
             </NavLink>
           </li>
