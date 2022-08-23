@@ -18,7 +18,7 @@ const MainNavigation = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to='fetchapi' className={({isActive}) => isActive ? activeClassName : undefined}>
+            <NavLink to='fetch-movies' className={({isActive}) => isActive ? activeClassName : undefined}>
               Fetch
             </NavLink>
           </li>
