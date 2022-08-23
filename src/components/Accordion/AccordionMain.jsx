@@ -1,7 +1,7 @@
 import AccordionItem from './AccordionItem';
 import classes from './AccordionMain.module.css';
 
-import accordionData from '../../dummyArrays/AccordionData';
+import accordionData from '../AccordionData';
 
 const AccordionMain = () => {
 

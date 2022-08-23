@@ -1,6 +1,7 @@
 .main-header {
   top: 0;               /*position navbar at top*/
   position: fixed;
+  width: 900px;
   background: rgb(188, 211, 252);
   padding: 15px, 100px;
   height: 50px;         /*to strict height */
@@ -21,7 +22,6 @@
   margin-left: 10px;
   font-size: 1.5rem;
 }
-
 
 .nav a{
   text-decoration: none;
