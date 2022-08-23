@@ -1,6 +1,8 @@
+import Products from '../components/ProductsFilter/Products';
+
 const ProductsFilter = () => {
 
-  return <h1> Products filter </h1>
+  return <Products />
 }
 
 export default ProductsFilter;
