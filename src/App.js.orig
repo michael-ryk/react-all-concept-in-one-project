@@ -1,11 +1,20 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
 
+<<<<<<< HEAD
+import UserModule from './components/UI/UserModule';
+import FetchApi from './components/FetchApi/FetchApi';
+=======
 // Import Components
+import classes from './App.module.css'
+>>>>>>> development
 import Layout from './layout/Layout';
 import MainNavigation from './layout/MainNavigation';
 import Footer from './layout/Footer';
 
+<<<<<<< HEAD
+=======
 // Import Pages
+>>>>>>> development
 import HomePage from './pages/HomePage';
 import Users from './pages/Users';
 import FetchMovies from './pages/FetchMovies';
