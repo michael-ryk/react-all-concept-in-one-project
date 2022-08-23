@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import AddUser from '../Modules/AddUser';
-import ShowDummyUsers from '../Modules/ShowDummyUsers';
-import ShowUsers from '../Modules/ShowUsers';
+import AddUser from './AddUser';
+import ShowDummyUsers from './ShowDummyUsers';
+import ShowUsers from './ShowUsers';
 
 function UserModule() {
   const [usersList, setUsersList] = useState([

@@ -1,4 +1,4 @@
-import peopleList from '../../dummyArrays/listOfPeople';
+import peopleList from './listOfPeople';
 
 function ShowDummyUsers() {
 
