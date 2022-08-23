@@ -1,7 +1,7 @@
 import AccordionItem from './AccordionItem';
 import classes from './AccordionMain.module.css';
 
-import accordionData from '../AccordionData';
+import accordionData from './AccordionData';
 
 const AccordionMain = () => {
 
@@ -14,7 +14,7 @@ const AccordionMain = () => {
         <section className={classes.info}>
           {accordionData.map( item => {
             return (
-              <AccordionItem key={item.key} {...item}/>
+              <AccordionItem key={item.id} {...item}/>
             )
           })}
         </section>
