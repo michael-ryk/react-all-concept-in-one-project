@@ -9,19 +9,19 @@ const dummyProducts = [
   },
   {
     id: 'a2',
-    name: 'בושם לגבר 100 מ''ל Adidas Dynamic Pulse',
+    name: 'בושם Adidas',
     category: 'בשמים',
     price: 24,
     img: 'https://img.ksp.co.il/item/66346/b_1.jpg?v=5',
-    description: '',
+    description: 'בושם לגבר מבית אדידס בניחוח מאסק מתול בעלי טימין.',
   },
   {
     id: 'a3',
-    name: 'סט מברגה/מקדחה ומברגת אימפקט Bosch GDR 120 LI + GSR 120 LI 12V',
+    name: 'מברגה BOSH',
     category: 'כלי עבודה',
     price: 769,
     img: 'https://img.ksp.co.il/item/159189/b_1.jpg?v=5',
-    description: '',
+    description: 'סט מברגה/מקדחה רוטטת + מברגה נטענת BOSCH GO כולל מטען + 2 סוללות 2AH + תיק. סט קומפקטי ואיכותי מבית Bosch.',
   },
 ];
 

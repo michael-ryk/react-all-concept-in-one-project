@@ -1,0 +1,41 @@
+.item-container {
+  grid-row: 1;
+  background-color: white;
+  border-radius: 15px;
+  border: solid 1px rgb(179, 179, 179);
+  box-shadow: 10px 10px 5px #b2bec3;
+  padding: 0.5rem;
+  max-width: 15rem;
+  
+  /* margin: 1rem; */
+  /* max-height: 400px; */
+  /* display: grid; */
+}
+
+.item-container img {
+  max-width: 100%;
+  max-height: 200px;
+  display: block; /* to deal with image like with block element */
+  margin: 0 auto; /* center image in div */
+}
+
+.item-info {
+  text-align: right;
+}
+
+.item-info h4 {
+  color:rgb(96, 181, 181);
+}
+
+.item-info header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 0.5rem auto;
+  padding: 0.5rem 0 ;
+  text-align: right;
+}
+
+.item-info p {
+
+}

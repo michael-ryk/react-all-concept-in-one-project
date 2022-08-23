@@ -1,0 +1,11 @@
+.items-list {
+  display: grid;
+  grid-template-columns: repeat ( 3, 1fr);
+  /* grid-template-rows: repeat ( 3, 1fr); */
+  gap: 0.5rem;
+  justify-items: center;
+
+  margin: 0 auto;
+  background-color: #dfe6e9;
+  padding: 0.5rem;
+}
