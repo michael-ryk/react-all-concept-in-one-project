@@ -6,12 +6,11 @@ const Categories = ({ categories }) => {
   };
 
   return (
-    <>
+    <div className={classes['category-container']}>
       {categories.map((item, index) => {
         return (
           <button
             type='button'
-            className={classes['filter-btn']}
             key={index}
             onClick={handleClick}
           >
@@ -19,7 +18,7 @@ const Categories = ({ categories }) => {
           </button>
         );
       })}
-    </>
+    </div>
   );
 };
 
