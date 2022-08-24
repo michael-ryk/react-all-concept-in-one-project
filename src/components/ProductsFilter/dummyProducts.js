@@ -23,6 +23,46 @@ const dummyProducts = [
     img: 'https://img.ksp.co.il/item/159189/b_1.jpg?v=5',
     description: 'סט מברגה/מקדחה רוטטת + מברגה נטענת BOSCH GO כולל מטען + 2 סוללות 2AH + תיק. סט קומפקטי ואיכותי מבית Bosch.',
   },
+  {
+    id: 'a4',
+    name: 'בושם Paco Rabanne 1 Million',
+    category: 'בשמים',
+    price: 191,
+    img: 'https://img.ksp.co.il/item/41885/b_1.jpg?v=5',
+    description: 'בושם לגבר איכותי מבית Paco Rabanne בניחוח אשכולית, מנטה, ורד, קינמון, תמציות תבליני, תמציות עץ, ענבר ופצ',
+  },
+  {
+    id: 'a5',
+    name: 'מכונת כביסה Lenco',
+    category: 'מוצרי חשמל',
+    price: 1029,
+    img: 'https://img.ksp.co.il/item/202585/b_1.jpg?v=5',
+    description: 'מכונת כביסה עם פתח חזית מרהיב, בעלת קיבולת כביסה של 6 ק”ג. מהירות סחיטה מקסימלית 800 סלד. לוח בקרה אלקטרוני עם תצוגת LED.',
+  },
+  {
+    id: 'a6',
+    name: 'פטיש שניצל',
+    category: 'כלי בישול',
+    price: 24,
+    img: 'https://img.ksp.co.il/item/207613/b_1.jpg?v=5',
+    description: 'פטיש עץ לשניצלים מבית Soltam, מושלם לריכוך והשטחת בשר/עוף.',
+  },
+  {
+    id: 'a7',
+    name: 'קפיץ לפתיחת סתימות',
+    category: 'כלי עבודה',
+    price: 89,
+    img: 'https://img.ksp.co.il/item/168939/b_1.jpg?v=5',
+    description: 'קפיץ ספירלי לביוב + ידית באורך של 10 מטר לניקוי מרזבים וצנרת ביוב ביתית, כיורים וקופסאות ביקורת. קל לתפעול ומומלץ בכל בית למענה ראשוני.',
+  },
+  {
+    id: 'a8',
+    name: 'אקדח דבק חם',
+    category: 'כלי עבודה',
+    price: 129,
+    img: 'https://img.ksp.co.il/item/208146/b_1.jpg?v=5',
+    description: 'אקדח דבק חם מקצועי מבית Hunter בהספק 680W.',
+  },
 ];
 
 export default dummyProducts;
