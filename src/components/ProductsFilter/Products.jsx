@@ -17,7 +17,7 @@ const Products = () => {
     if (filter === 'כל הקטגוריות') {
       setItemsList(dummyProducts)
     } else {
-      const filteredItems = itemsList.filter( item => item.category === filter );
+      const filteredItems = dummyProducts.filter( item => item.category === filter );
       setItemsList(filteredItems)
     }
   }
