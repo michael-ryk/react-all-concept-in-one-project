@@ -1,9 +1,7 @@
+import { computeHeadingLevel } from '@testing-library/react';
 import classes from './Categories.module.css';
 
-const Categories = ({ categories }) => {
-  const handleClick = (e) => {
-    console.log(e.target.innerHTML)
-  };
+const Categories = ({ categories, filterProducts }) => {
 
   return (
     <div className={classes['category-container']}>
@@ -12,7 +10,7 @@ const Categories = ({ categories }) => {
           <button
             type='button'
             key={index}
-            onClick={handleClick}
+            onClick={ () => {filterProducts(item)} }
           >
             {item}
           </button>
