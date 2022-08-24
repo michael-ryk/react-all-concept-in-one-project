@@ -1,5 +1,5 @@
 .item-container {
-  grid-row: 1;
+  /* grid-row: 1; */
   background-color: white;
   border-radius: 15px;
   border: solid 1px rgb(179, 179, 179);
