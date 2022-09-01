@@ -12,9 +12,13 @@ const MainNavigation = () => {
   return (
     <NavbarStyles>
       <div className='nav-header'>
-        <img src='https://dcassetcdn.com/design_img/2453268/83087/83087_12874298_2453268_6dc46ddf_image.jpg' className='logo' alt='logo' />
+        <img
+          src='https://dcassetcdn.com/design_img/2453268/83087/83087_12874298_2453268_6dc46ddf_image.jpg'
+          className='logo'
+          alt='logo'
+        />
         <button
-          className='nav-toggle'
+          className={`nav-toggle ${!showLinks && 'show-links'}`}
           onClick={() => {
             setShowLinks(!showLinks);
           }}
@@ -22,19 +26,18 @@ const MainNavigation = () => {
           <FaBars />
         </button>
       </div>
-      <div
-        className={`${
-          showLinks ? 'links-container show-container' : 'links-container'
-        }`}
-      >
+      <div className={`links-container ${showLinks && 'show-container'}`}>
         <ul className='links'>
           {links.map((link) => {
             return (
               <li key={link.id}>
                 <NavLink
                   to={link.url}
-                  className={({ isActive }) =>
-                    isActive ? undefined : undefined  /*TODO fix active style for navlinks */
+                  className={
+                    ({ isActive }) =>
+                      isActive
+                        ? undefined
+                        : undefined /*TODO fix active style for navlinks */
                   }
                 >
                   {link.text}
@@ -60,21 +63,25 @@ const NavbarStyles = styled.nav`
   }
   .nav-toggle {
     color: rgb(0, 13, 114);
+    font-size: 1.5rem;
     background: transparent;
     border-color: transparent;
     cursor: pointer;
     transition: all 0.3s linear;
     &:hover {
       color: rgb(181, 181, 255);
-      transform: rotate(90deg);
     }
   }
+
+  .show-links {
+    transform: rotate(90deg);
+  }
+
   .logo {
     height: 60px;
     object-fit: cover;
     width: 250px;
     object-position: -50px -55px;
-    
   }
   .links-container {
     height: 0;
