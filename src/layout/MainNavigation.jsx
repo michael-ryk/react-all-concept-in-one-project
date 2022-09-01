@@ -5,6 +5,7 @@ import { links } from '../const/links';
 
 import classes from './MainNavigation.module.css';
 import styled from 'styled-components';
+import { FaBars } from 'react-icons/fa';
 
 const MainNavigation = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -20,7 +21,7 @@ const MainNavigation = () => {
             setShowLinks(!showLinks);
           }}
         >
-          Expand
+          <FaBars />
         </button>
       </div>
       <div
