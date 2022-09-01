@@ -3,14 +3,12 @@ import { NavLink } from 'react-router-dom';
 
 import { links } from '../const/links';
 
-import classes from './MainNavigation.module.css';
 import styled from 'styled-components';
 import { FaBars } from 'react-icons/fa';
 
 const MainNavigation = () => {
   const [showLinks, setShowLinks] = useState(false);
 
-  let activeClassName = classes.active;
   return (
     <NavbarStyles>
       <div className='nav-header'>
@@ -36,7 +34,7 @@ const MainNavigation = () => {
                 <NavLink
                   to={link.url}
                   className={({ isActive }) =>
-                    isActive ? activeClassName : undefined
+                    isActive ? undefined : undefined  /*TODO fix active style for navlinks */
                   }
                 >
                   {link.text}
