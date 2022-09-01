@@ -14,7 +14,7 @@ const MainNavigation = () => {
   return (
     <NavbarStyles>
       <div className='nav-header'>
-        <img src='' className='logo' alt='logo' />
+        <img src='https://dcassetcdn.com/design_img/2453268/83087/83087_12874298_2453268_6dc46ddf_image.jpg' className='logo' alt='logo' />
         <button
           className='nav-toggle'
           onClick={() => {
@@ -72,7 +72,11 @@ const NavbarStyles = styled.nav`
     }
   }
   .logo {
-    height: 30px;
+    height: 60px;
+    object-fit: cover;
+    width: 250px;
+    object-position: -50px -55px;
+    
   }
   .links-container {
     height: 0;
