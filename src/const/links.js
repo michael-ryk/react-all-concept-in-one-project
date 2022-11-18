@@ -24,4 +24,9 @@ export const links = [
     url: '/products-filter',
     text: 'Products Filter',
   },
+  {
+    id: 6,
+    url: '/custom-hooks',
+    text: 'Custom Hooks',
+  },
 ];

@@ -11,6 +11,7 @@ import Users from './pages/Users';
 import FetchMovies from './pages/FetchMovies';
 import Accordion from './pages/Accordion';
 import ProductsFilter from './pages/ProductsFilter';
+import CustomHooks from './pages/CustomHook';
 
 import classes from './App.module.css'
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='fetch-movies' element={<FetchMovies />} />
           <Route path='accordion' element={<Accordion />} />
           <Route path='products-filter' element={<ProductsFilter />} />
+          <Route path='custom-hooks' element={<CustomHooks />} />
         </Routes>
       </Layout>
       <Footer />
