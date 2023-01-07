@@ -12,6 +12,7 @@ import FetchMovies from './pages/FetchMovies';
 import Accordion from './pages/Accordion';
 import ProductsFilter from './pages/ProductsFilter';
 import CustomHooks from './pages/CustomHook';
+import FadeIn from './pages/FadeIn';
 
 import classes from './App.module.css'
 
@@ -28,6 +29,7 @@ function App() {
           <Route path='accordion' element={<Accordion />} />
           <Route path='products-filter' element={<ProductsFilter />} />
           <Route path='custom-hooks' element={<CustomHooks />} />
+          <Route path='fade-in' element={<FadeIn />} />
         </Routes>
       </Layout>
       <Footer />

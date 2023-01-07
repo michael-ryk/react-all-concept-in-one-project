@@ -29,4 +29,9 @@ export const links = [
     url: '/custom-hooks',
     text: 'Custom Hooks',
   },
+  {
+    id: 7,
+    url: '/fade-in',
+    text: 'Fade In',
+  },
 ];
